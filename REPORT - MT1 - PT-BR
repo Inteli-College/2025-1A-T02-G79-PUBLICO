@@ -1,0 +1,78 @@
+# Report de Desenvolvimento
+
+## 1. Identificação do Projeto
+
+- **Nome da Empresa:** Flare Dynamic Art
+- **Nome do Projeto:** TRAIL OF ALYA
+- **Responsável:**
+    * Arthur Alberto Cardoso Reis
+    * Felipe Gomes Rodrigues Dos Santos
+    * Kil Matheus Gomes Teixeira
+    * Leandro de Oliveira Custodio
+  
+- **Data:** 10/04/2025  
+- **Versão do Documento:** 1.0  
+
+## 2. Resumo Executivo
+
+Este report documenta o progresso no desenvolvimento da primeira versão da documentação necessária para a estruturação da empresa, emblobando áreas de negócio, liderança, governança, jurídica e financeira e também sobre a estruturação da ideação inicial para o desenvolvimento do jogo.
+
+## 3. Objetivos
+
+- Estruturação básica de documentação para abertura de uma empresa.
+- Estruturação da História do Jogo
+- Game Design
+- Definções de estratégia de desenvolvimento
+
+## 4. Desenvolvimento Realizado
+
+### 4.1 Atividades Concluídas
+
+### 4.1.1 Jogo
+- Criação da História do Mundo
+- Criação da História dos Personagens
+- Criação dos designs dos personagens 
+- Criação dos designs dos itens
+- Estruturação do GDD
+- Elaboração do Level Design
+- Elaboração do conceito das fases do jogo
+- Criação de sistema linguístico único para o jogo
+- Prototipação e Hud
+- Prototipação de Menu
+- Mapeamento de botões
+- Criação de mecânicas de gameplay
+
+### 4.1.2 Negócios
+- Desenvolvimento de Marca (Identidade Visual)
+- Logo
+- Paleta de Cores e Fontes
+- Estruturação da empresa (Documentação Inicial)
+- LGPD
+- Marketing
+- Análise Financeira
+- Jurídico
+- Planejamento estratégico
+- Fundação Legal e Estrutura Organizacional (apenas a ideia)
+- Análise de mercado
+- Pesquisa com o público-alvo
+ 
+
+### 4.2 Tecnologias Utilizadas
+
+- **Documentação:** Google Sheets e Docs
+- **Desenhos:** Feito a mão e digitalizado usando o aplicativo Sketchbook (Android e IOS)
+- **Comunicação:** Google Meet e Slack
+
+## 5. Desafios e Soluções
+
+
+## 6. Próximos Passos
+
+- Desenvolvimento do Jogo (Godot)
+- Alinhar nova estratégia de desenvolvimento
+- Novas pesquisas sobre o desenvolvimento do jogo
+- Definir estrutura de Estruturação de desenvolvimento e Estruturação de levantamento da Empresa.
+
+## 7. Considerações Finais
+
+O projeto avançou significativamente, permitindo uma definição clara do que será desenvolvido para o jogo. Além disso, estabelecemos uma base sólida para a estruturação da empresa e sua viabilização. Também foi decidido que o jogo será em 2D, com enredo e personagens já delineados.
