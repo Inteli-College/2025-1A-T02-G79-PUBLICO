@@ -1,0 +1,130 @@
+# Report de Desenvolvimento
+
+## 1. Identificação do Projeto
+
+- **Nome da Empresa:** Flare Dynamic Art
+- **Nome do Projeto:** TRAIL OF ALYA
+- **Responsável:**
+    * Arthur Alberto Cardoso Reis
+    * Felipe Gomes Rodrigues Dos Santos
+    * Kil Matheus Gomes Teixeira
+    * Leandro de Oliveira Custodio
+
+- **Data:** 25/06/2025  
+- **Versão do Documento:** 1.0  
+
+## 2. Resumo Executivo
+
+Este report documenta o progresso no desenvolvimento focado na criação do jogo, após o passo de idealização realizado no Módulo passado, em conjunto com a continuação da documentação da empresa. Os tópicos de desenvolvimento principais abordados foram a criação dos Tilesets do Jogo (2D), Modelagem e Animações 3D, Efeitos Sonoros, Músicas, criação da Boss Figth assim como a progamação, em conjunto com atualização das documentações como GDD e Estruturação da Empresa. Também a aplicação de uma nova reorganização de validações de desenvolvimento, incluindo as criações de atas de reuniões.
+
+## 3. Objetivos
+
+- Programação da criação Procedural de Salas .
+- Desenvolvimento dos Tilesets (Paredes, Chão, Estantes, Portas, Velas e Livros).
+- Modelagem e Animações 3D (Alya e Hug).
+- Game Design.
+- Efeitos Sonoros.
+- Músicas.
+- Boss Figth - Documentação.
+- Boss Figth - Programação.
+- Atualização dos Documentos GDD e Estruturação da Empresa.
+
+
+## 4. Desenvolvimento Realizado
+
+### 4.1 Atividades Concluídas
+
+**Arte e Modelagem**
+
+* Criação dos Tilesets 2D:
+
+  * Paredes
+  * Chão
+  * Estantes
+  * Portas
+  * Velas
+  * Livros
+* Modelagem 3D dos personagens:
+
+  * Alya (protagonista)
+  * Hug (inimigo)
+* Animações 3D para Alya e Hug
+* Modelagem das salas do jogo
+
+**Interface (HUD e UI)**
+
+* Criação de sprites da HUD:
+
+  * Botão
+  * Barra de vida (Boss e Protagonista)
+  * Magazine de armas
+  * Magazine de objetos
+* Alterações e ajustes nas sprites da HUD
+
+**Programação**
+
+* Implementação da lógica de criação procedural de salas
+* Programação do inimigo Hug
+* Programação da lógica de tiro e troca de armas
+* Programação dos combos do protagonista
+* Programação da Boss Fight
+
+**Design de Áudio**
+
+* Criação de músicas originais
+* Desenvolvimento de efeitos sonoros
+
+**Design de Jogo**
+
+* Desenvolvimento e documentação da Boss Fight
+* Atualização do GDD (Game Design Document)
+* Pesquisa de mercado para embasamento do projeto
+
+**Estrutura Organizacional e Documentação**
+
+* Atualização do documento de estruturação da empresa (governança)
+* Criação de atas de reuniões para validação do desenvolvimento
+* Versão inicial do Pitch do projeto
+
+**Marketing e Comunicação**
+
+* Desenvolvimento das redes sociais
+* Criação de um site institucional para o projeto
+ 
+
+### 4.2 Tecnologias Utilizadas
+
+- **Documentação:** Google Sheets e Docs
+- **Desenhos:** Feito a mão e digitalizado usando o aplicativo Sketchbook (Android e IOS).
+- **TilesSets** Feito com o Aseprite
+- **Modelagens** BlockBench e ...
+- **Arte Sonora**
+- **Comunicação:** Google Meet e Slack
+- **Programação** Godot e VsCode
+
+## 5. Desafios e Soluções
+
+### 5.1 Dificuldades na Produção Artística
+
+Durante o processo de criação da arte do jogo, surgiram desafios relacionados ao domínio de ferramentas e técnicas específicas.
+**Solução:** Foram realizados estudos autônomos por meio de tutoriais no YouTube e troca de conhecimentos com colegas da equipe, o que contribuiu para a superação das dificuldades e melhoria na qualidade da arte produzida.
+
+### 5.2 Esquecimento de Conteúdos Discutidos nas Reuniões
+
+Houve dificuldades em relembrar os assuntos tratados e as decisões tomadas nas reuniões de equipe.
+**Solução:** Foi implementado o uso sistemático de atas de reunião, com registros organizados e compartilhados entre os membros, garantindo histórico e alinhamento.
+
+### 5.3 Interferência Indevida Entre Áreas de Trabalho
+
+Alguns membros realizavam alterações que impactavam diretamente o trabalho de outros sem a devida comunicação, gerando retrabalho e desalinhamentos.
+**Solução:** Foi adotado um novo método de validação interna, com maior controle e organização dos fluxos de trabalho, permitindo que cada membro atue dentro de sua área com validações bem definidas e sem interferência indevida.
+
+## 6. Próximos Passos
+
+- Testes e validações com usuários.
+- Refinamento mediante Feedbacks do Jogo.
+- Definir pitch para apresentação em rodadas de negócios e de parceiros.
+
+## 7. Considerações Finais
+
+O projeto avançou significativamente, permitindo a criação de uma base sólida para o jogo. Além disso, estamos em busca de aprimorar a qualidade tanto do desenvolvimento quanto da gestão do projeto, com o objetivo de, futuramente, atrair investidores interessados em apoiar nosso crescimento.
