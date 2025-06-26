@@ -96,9 +96,9 @@ Este report documenta o progresso no desenvolvimento focado na criação do jogo
 
 - **Documentação:** Google Sheets e Docs
 - **Desenhos:** Feito a mão e digitalizado usando o aplicativo Sketchbook (Android e IOS).
-- **TilesSets** Feito com o Aseprite
-- **Modelagens** BlockBench e ...
-- **Arte Sonora**
+- **TilesSets** Feito com o Aseprite e Piskel
+- **Modelagens** BlockBench e Blender
+- **Arte Sonora**: Gravada no programa Reaper utilizando um Roland-GO:Piano como input MIDI
 - **Comunicação:** Google Meet e Slack
 - **Programação** Godot e VsCode
 
