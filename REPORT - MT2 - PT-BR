@@ -63,11 +63,60 @@ Este report documenta o progresso no desenvolvimento focado na criação do jogo
 
 **Programação**
 
-* Implementação da lógica de criação procedural de salas
-* Programação do inimigo Hug
-* Programação da lógica de tiro e troca de armas
-* Programação dos combos do protagonista
-* Programação da Boss Fight
+* Lógica de criação procedural de salas:
+Uso de matrizes para o controle de instancia de cada sala, evitando que 2 salas sejam instanciadas no mesmo local.
+
+Implementação de logica de criação de portas de acordo com as salas concatenadas, impedindo que portas que não levam a nenhuma sala sejam criadas.
+
+Inserção de objetos e inimigos nas salas.
+
+* Sistema de maquina de estados
+Utilizado para gerir os movimentos do player e dos inimigos do jogo de forma dinamica, utilizando gatilhos específicos para realizar a troca de estado, aos quais contem lógicas que definem o comportamento da entidade de acordo com o atual estado.
+
+* Implementação do inimigo Hug:
+Primeira integração dos modelos 3d com o cenário 2d do jogo
+
+* lógica de tiro e troca de armas
+Foram implementadas
+- Arma lazer que dispara projeteis retos, que são destruídos ao encostar em qualquer superfície ou entidade
+- Arma de bumerangue, o qual pode ser lançado no cenário para acertar os inimigos multiplas vezes, até retornar a mão do jogador. Podem ser instanciadas até 2 bumerangues por vez na cena.
+
+* Programação do sistema de combos encadeados
+Sistema de controle de combos, o qual permite inserir sequencias de golpes ao jogador, possibilitando alterações de parâmetros a cada golpe consecutivo, como dano, knockback, alcance etc.
+
+* Programação da Boss Fight 
+Uso de maquina de estados para administrar os movimentos e reações do boss de acordo com o momento da batalha, utilizando identificadores diversos como condições de transição, permitindo que o comportamento do boss seja alterado a cada troca de estado.
+
+Criação de ataques do boss:
+- Dash que deixa pedaços de cera derretida, que aplicam lentidão ao jogador, caso o mesmo encoste com o objeto
+- ataque de bolas de fogo, o qual o boss fica parado e lança diversos projeteis que caem do céu, aplicando um efeito de dano contínuo, tem o feedback visual de aplicar chamas no corpo do jogador, enquanto o efeito persiste
+- ataque de tiro, funcionando de forma similar ao ataque de tiro do player, mas com uma cadencia maior
+
+* Hud
+- Implementação de barra de vida do player e do boss
+- Implementação de roda de armas, indicador que mostra qual arma esta sendo utilizada pelo player
+
+* Menus
+- Implementação de menu inicial
+- Implementação de menu de pausa
+- Implementação de menu de game over
+
+* Sistema de coleta de itens
+O sistema de coleta de itens inclui
+- Baú que pode aparecer nas salas contendo ítens diversos
+- Itens de recuperação de vida
+- Itens de recuperação de munição
+
+* Movimentação e ataques de defesa
+- Movimentação do jogador
+- Habilidade de dash, que permite o jogador criar um impulso
+- Habilidade de escudo, o qual cria um campo eletrico envolta do jogador, que reflete balas e causa dano aos inimigos que entrarem em contato
+
+* Shaders
+- Criação de sistema de iluminação global, que afeta o ataque de chamas do boss e o ataque de magia do player
+- Efeito de Ghost, o qual cria diversas copias de um objeto e o instancia em seu local atual, utilizado no dash e no bumerangue, para passar uma ideia de movimento rapido
+- Efeito de chamas utilizando um sistema de geração de particulas em tempo real, utilizado em ataques do boss
+- animações de impacto, como a explosão do tiro ao encostar  na superficie, fumaça ao derrotar um inimigo etc. 
 
 **Design de Áudio**
 
