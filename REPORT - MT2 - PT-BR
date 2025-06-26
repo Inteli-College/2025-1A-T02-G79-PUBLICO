@@ -149,7 +149,8 @@ O sistema de coleta de itens inclui
 - **Modelagens** BlockBench e Blender
 - **Arte Sonora**: Gravada no programa Reaper utilizando um Roland-GO:Piano como input MIDI
 - **Comunicação:** Google Meet e Slack
-- **Programação** Godot e VsCode
+- **Programação do jogo** Godot Engine 4.3
+- **Programação do Site institucional** React + Vite com Typecript
 
 ## 5. Desafios e Soluções
 
