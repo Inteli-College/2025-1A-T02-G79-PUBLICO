@@ -1,0 +1,140 @@
+Claro! Aqui está a tradução para o inglês do seu relatório:
+
+---
+
+# Development Report
+
+## 1. Project Identification
+
+* **Company Name:** Flare Dynamic Art
+
+* **Project Name:** TRAIL OF ALYA
+
+* **Responsible Team Members:**
+
+  * Arthur Alberto Cardoso Reis
+  * Felipe Gomes Rodrigues Dos Santos
+  * Kil Matheus Gomes Teixeira
+  * Leandro de Oliveira Custodio
+
+* **Date:** 06/25/2025
+
+* **Document Version:** 1.0
+
+## 2. Executive Summary
+
+This report documents the development progress focused on the creation of the game, following the ideation phase carried out in the previous module, along with the continued documentation of the company. The main development topics addressed were the creation of 2D game tilesets, 3D modeling and animations, sound effects, music, the creation and programming of the Boss Fight, and the update of documents such as the GDD and company structure. Additionally, a new reorganization for development validation was implemented, including the creation of meeting minutes.
+
+## 3. Objectives
+
+* Procedural room generation programming
+* Development of Tilesets (Walls, Floors, Shelves, Doors, Candles, and Books)
+* 3D Modeling and Animations (Alya and Hug)
+* Game Design
+* Sound Effects
+* Music
+* Boss Fight - Documentation
+* Boss Fight - Programming
+* Update of GDD and Company Structure documents
+
+## 4. Development Carried Out
+
+### 4.1 Completed Activities
+
+**Art and Modeling**
+
+* Creation of 2D Tilesets:
+
+  * Walls
+  * Floors
+  * Shelves
+  * Doors
+  * Candles
+  * Books
+* 3D modeling of characters:
+
+  * Alya (protagonist)
+  * Hug (enemy)
+* 3D animations for Alya and Hug
+* Modeling of game rooms
+
+**Interface (HUD and UI)**
+
+* Creation of HUD sprites:
+
+  * Button
+  * Health bars (Boss and Protagonist)
+  * Weapon magazine
+  * Item magazine
+* Adjustments and changes to HUD sprites
+
+**Programming**
+
+* Implementation of procedural room generation logic
+* Programming of Hug (enemy)
+* Implementation of shooting logic and weapon switching
+* Programming of protagonist's combo system
+* Programming of the Boss Fight
+
+**Audio Design**
+
+* Creation of original music tracks
+* Development of sound effects
+
+**Game Design**
+
+* Development and documentation of the Boss Fight
+* GDD (Game Design Document) update
+* Market research to support the project
+
+**Organizational Structure and Documentation**
+
+* Update of the company structure document (governance)
+* Creation of meeting minutes to validate development progress
+* Initial version of the project pitch
+
+**Marketing and Communication**
+
+* Development of social media
+* Creation of a project website
+
+### 4.2 Technologies Used
+
+* **Documentation:** Google Sheets and Docs
+* **Drawings:** Hand-drawn and digitized using the Sketchbook app (Android and iOS)
+* **Tilesets:** Created with Aseprite
+* **Modeling:** Blockbench and ...
+* **Sound Design**
+* **Communication:** Google Meet and Slack
+* **Programming:** Godot and VSCode
+
+## 5. Challenges and Solutions
+
+### 5.1 Difficulties in Artistic Production
+
+During the creation process of the game's art, challenges arose regarding mastery of specific tools and techniques.
+**Solution:** Self-directed learning through YouTube tutorials and knowledge sharing among team members helped overcome these difficulties and improve the quality of the produced art.
+
+### 5.2 Forgetting Discussion Topics from Meetings
+
+There were difficulties in recalling subjects discussed and decisions made during team meetings.
+**Solution:** Systematic use of meeting minutes was implemented, with organized records shared among team members, ensuring alignment and historical tracking.
+
+### 5.3 Improper Interference Between Work Areas
+
+Some members made changes that directly impacted others' work without proper communication, leading to rework and misalignments.
+**Solution:** A new internal validation method was adopted, providing better control and organization of workflows, ensuring that each member operates within their area with well-defined validations and no undue interference.
+
+## 6. Next Steps
+
+* User testing and validation
+* Refinement based on game feedback
+* Define pitch for presentation in business and partnership rounds
+
+## 7. Final Considerations
+
+The project has made significant progress, enabling the creation of a solid foundation for the game. Additionally, we are striving to improve both the development and project management quality, aiming to attract future investors interested in supporting our growth.
+
+---
+
+Se quiser, posso gerar um PDF ou aplicar uma formatação visual nesse texto.
