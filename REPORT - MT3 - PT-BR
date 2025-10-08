@@ -1,0 +1,192 @@
+# Report de Desenvolvimento
+
+## 1. Identificação do Projeto
+
+- **Nome da Empresa:** Flare Dynamic Art
+- **Nome do Projeto:** TRAIL OF ALYA
+- **Responsável:**
+    * Arthur Alberto Cardoso Reis
+    * Felipe Gomes Rodrigues Dos Santos
+    * Kil Matheus Gomes Teixeira
+    * Leandro de Oliveira Custodio
+
+- **Data:** 07/10/2025  
+- **Versão do Documento:** 1.0  
+
+## 2. Resumo Executivo
+
+Esse reprot representa o progresso do projeto, com foco em melhorias e correções para o nosso jogo. Detalhamos as validações de gameplay, o balanceamento e as correções de bugs, além do desenvolvimento de novos assets 2D e 3D, como sprites, modelos e animações. A documentação do projeto é atualizada de forma contínua, utilizando como base o cronograma e os feedbacks coletados nos playtests com usuários.
+
+## 3. Objetivos
+
+* Correções de bugs gerais.
+* Desenvolvimento de Tilesets (Itens, totens, atualizações de UI e objetos).
+* Modelagem e Animações 3D de personagens (Alya, LostFaces e Flamma Monk).
+* Aprimoramento do Game Design.
+* Criação de Efeitos Sonoros.
+* Composição de Músicas originais.
+* Programação e Design de Boss Fights.
+* Realização de Playtests e coleta de feedback via Forms.
+* Atualização da Pesquisa de Mercado e Plano de Negócios.
+
+## 4. Desenvolvimento Realizado
+
+### 4.1 Atividades Concluídas
+
+**Arte e Modelagem 2D/3D**
+
+* **Criação e Atualização de Tilesets 2D e UI:**
+    * Desenvolvimento de 4 totens animados (16 frames).
+    * Implementação de "Escrita no Chão".
+    * Criação de ataques para Rug (com animação) e Alya (com animação).
+    * Desenvolvimento de diferentes versões de chão (V5, V4 e V2).
+    * Criação de porta do Boss (com animação) e ajuste de sua proporção.
+    * Atualização dos botões dos menus Principal e Pause.
+    * Criação de projéteis para os personagens Flamma Monk e Rug.
+    * Criação de sprites para baús (aberto e fechado).
+    * Inserção de sprites de velas com animação.
+    * Desenvolvimento de sprites para a Sala Central (Totens e chão), corredores e estilização de outras salas.
+    * Criação de sprites para ataque de Ondas Sísmicas do Rug (rochas e sísmico).
+    * Ajuste dos tiles da parede conforme a luz.
+
+* **Modelagem 3D e Animações de Personagens e Bosses:**
+    * **Alya:** Modelagem e animações de movimento (corrigido bug de movimentação estática).
+    * **Rug:** Modelagem e animações de ataque (Idle, Player visto, Spin Attack Loop, Spin Attack Introdução, Walking Loop).
+    * **Flamma Monk:** Animações de ataque (Backfirst, Firerain, Light Wave, Palm Strike, Dash).
+    * **Lost Faces:** Modelagem.
+    * **Boss:** Criação do modelo 3D do boss.
+
+**Programação**
+
+* **Geração Procedural de Salas:**
+    * Lógica de uso de matrizes para controle de instâncias de salas, evitando sobreposição.
+    * Implementação de lógica de criação de portas conectadas, impedindo portas sem saída.
+    * Inserção de objetos e inimigos nas salas.
+    * Parametrização de salas para aleatoriedade de spawns de baús e itens.
+
+* **Sistema de Máquina de Estados:**
+    * Utilizado para gerenciar movimentos de jogadores, inimigos e do Boss de forma dinâmica, com gatilhos específicos para troca de estado.
+
+* **Implementação de Inimigos e Boss:**
+    * Primeira integração de modelos 3D (Rug) com cenário 2D.
+    * **Rug:** Programação do ataque sísmico e inserção de sprites.
+    * **Flamma Monk Boss Fight:** Impedido ataque antes do diálogo.
+    * **Boss Fight:**
+        * Uso de máquina de estados para administrar movimentos e reações.
+        * **Ataques do Boss:**
+            * Dash que deixa cera derretida (lentidão ao jogador).
+            * Bolas de fogo que caem do céu (dano contínuo, efeito visual de chamas).
+            * Ataque de tiro (similar ao do player, com cadência maior).
+            * Novos ataques desenhados e animados em Pixel Art (Cera Derretida, Bola de Fogo Azul e Vermelho).
+            * Inserção dos novos ataques no jogo.
+        * Correção de bugs de movimentação do Boss.
+        * Sistema de iluminação da Boss Fight.
+        * Text Box da Boss Fight.
+
+* **Mecânicas de Combate e Movimentação:**
+    * **Lógica de Tiro e Troca de Armas:**
+        * Arma laser (projéteis retos).
+        * Arma bumerangue (lançado, acerta múltiplos inimigos, retorna ao jogador, até 2 bumerangues na cena).
+    * **Sistema de Combos Encadeados:**
+        * Permite sequências de golpes com alteração de parâmetros (dano, knockback, alcance).
+    * **Movimentação e Ataques de Defesa do Jogador:**
+        * Movimentação geral do jogador.
+        * Habilidade de Dash (impulso).
+        * Habilidade de Escudo (campo elétrico que reflete balas e causa dano).
+    * Ajuste na física do combate.
+    * Ataque corpo a corpo.
+    * Ajuste no sistema de mira.
+    * Prototipação do combate Lost Faces.
+
+* **HUD e UI (Refatoração e Melhorias do Design):**
+    * Barra de vida do player e do boss.
+    * Roda de armas (indicador da arma em uso).
+
+* **Menus:**
+    * Menu Inicial refatorado.
+    * Menu de Pausa refatorado.
+    * Menu de Game Over refatorado.
+    * Tela de Configurações (Redimensionamento de tela, volume de áudio e volume de efeitos).
+
+* **Sistema de Coleta de Itens:**
+    * Itens de recuperação de vida.
+    * Itens de recuperação de munição.
+    * Lógica randômica de spawn das chaves pelo mapa.
+    * Sistema de 4 chaves para abrir a sala do boss.
+    * Animação e ajuste de brilho das chaves.
+    * Retirada de lógicas de spawns de itens aleatórios (decisão de design).
+    * Remoção do sistema de número de balas (decisão de design, até para fins de balanceamento de jogo).
+
+* **Shaders e Efeitos Visuais:**
+    * Criação de sistema de iluminação global (afeta ataque de chamas do boss e magia do player).
+    * Efeito de Ghost (cópias de objeto para indicar movimento rápido - Dash e Bumerangue).
+    * Efeito de chamas (sistema de partículas em tempo real da chama 3D - ataques do boss).
+
+**Design de Áudio**
+
+* Adição de músicas autorais ao jogo.
+* Adição de efeitos sonoros ao jogo.
+* Listagem de efeitos sonoros necessários.
+* Criação de música para o menu principal.
+
+**Documentação e Game Design**
+
+* **Reorganização Geral da Documentação:** Destrinchamento em 3 partes: Arquitetura, Estética, História e Engenharia.
+    * Atualização da seção de Arquitetura (Mecânica do Lost Face).
+    * Atualização do Plano de Negócios (Sessão 1.2 - Análise de Mercado, Sessão 8.1 - Referências).
+* **Game Design:**
+    * Prototipação da sala do tutorial.
+    * Criação de um minimapa conceitual.
+
+**Playtests e Pesquisa de Mercado**
+
+* Realização de 2 playtests assistidos e documentados (25/09 e 05/10).
+* Criação de Forms para playtest e pesquisa de mercado.
+* Atualização da Pesquisa de Mercado.
+
+### 4.2 Outros Desenvolvimentos
+
+* **Desenvolvimento de Introdução do Jogo.**
+* **Criação de Sistema de Inventário.**
+* **Arrumar Github do Jogo.**
+* **Requisitos de Entrega do Protótipo:**
+    * Em Inglês: [https://docs.google.com/document/d/1cY6BDtNSjlpcQvvhjNgfjoSaQuC7OMc4SJlJR1mk0I8/edit?tab=t.0](https://docs.google.com/document/d/1cY6BDtNSjlpcQvvhjNgfjoSaQuC7OMc4SJlJR1mk0I8/edit?tab=t.0)
+    * Em Português: [https://docs.google.com/document/d/1Q4ZU0KrZ9C21CruDLzFirT10HOr-oL0YwteLVLZ-Tfg/edit?tab=t.0#heading=h.90bwll9g01dr](https://docs.google.com/document/d/1Q4ZU0KrZ9C21CruDLzFirT10HOr-oL0YwteLVLZ-Tfg/edit?tab=t.0#heading=h.90bwll9g01dr)
+* **Roteiro do Pitch:**
+    * Em Inglês: [https://docs.google.com/document/d/1-gtokTXbk5JVWRHCNOsNZcEmDk7d0bFk1my80eQd1GM/edit?tab=t.0](https://docs.google.com/document/d/1-gtokTXbk5JVWRHCNOsNZcEmDk7d0bFk1my80eQd1GM/edit?tab=t.0)
+    * Em Português: [https://docs.google.com/document/d/1d9ZnLYzkqD1ZxFdMB40TKI902X4k-vogsTqiJkkZwCc/edit?tab=t.0](https://docs.google.com/document/d/1d9ZnLYzkqD1ZxFdMB40TKI902X4k-vogsTqiJkkZwCc/edit?tab=t.0)
+* **Forms:**
+    * Playtest: [https://docs.google.com/forms/d/10y6vVh1-R3e_ux-4HlsxEfRZWePfuLx89j5cUBx1_2w/edit](https://docs.google.com/forms/d/10y6vVh1-R3e_ux-4HlsxEfRZWePfuLx89j5cUBx1_2w/edit)
+    * Pesquisa de Mercado: [https://docs.google.com/forms/d/17MgUbkpOnvsrXBHhkJUEtVrSkF9wn3IGIsTL06TO464/edit](https://docs.google.com/forms/d/17MgUbkpOnvsrXBHhkJUEtVrSkF9wn3IGIsTL06TO464/edit)
+* **Links de Desenvolvimento (Vídeos de Review/Animação):**
+    * [https://www.youtube.com/watch?v=JT8aavSew2A](https://www.youtube.com/watch?v=JT8aavSew2A)
+    * Outros vídeos de review e animação mencionados.
+
+### 4.2 Tecnologias Utilizadas
+
+- **Documentação:** Google Sheets e Docs
+- **Desenhos:** Feito a mão e digitalizado usando o aplicativo Sketchbook (Android e IOS).
+- **TilesSets** Feito com o Aseprite e Piskel
+- **Modelagens** BlockBench e Blender
+- **Arte Sonora**: Gravada no programa Reaper utilizando um Roland-GO:Piano como input MIDI
+- **Comunicação:** Google Meet e Slack
+- **Programação do jogo** Godot Engine 4.3
+- **Gravação de vídeo** OBS Studio
+
+## 5. Desafios e Soluções
+
+### 5.1 Gerenciamento de Tempo e Reavaliação de tasks
+
+Durante o processo de desenvolvimento do jogo, muitas tasks pequenas acabaram aculando.
+**Solução:** Apos uma reunião com a Fabiana (monitora do projeto) foi indicado o uso da Matriz Prioridade x Urgência para efetivar prioridades de tasks para refinamento do produto.
+
+## 6. Próximos Passos
+
+- Refinamento mediante Feedbacks do Jogo.
+- Fechar Documentação do jogo.
+- Reavaliar estratégia de mercado.
+- Realização de picth para a banca.
+
+## 7. Considerações Finais
+
+O projeto alcançou um avanço significativo, estabelecendo uma base sólida para o jogo com a implementação de mecânicas essenciais e assets de alta qualidade. Estamos empenhados em aprimorar continuamente tanto o desenvolvimento técnico quanto a gestão do projeto, posicionando-nos para atrair o interesse de futuros investidores e impulsionar o crescimento do nosso produto.
